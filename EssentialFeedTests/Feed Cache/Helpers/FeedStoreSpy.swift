@@ -60,4 +60,8 @@ class FeedStoreSpy: FeedStore {
         receivedMessages.append(.retrieve)
     }
     
+    func completeRetrievalWithEmptyCache(at index: Int = 0) {
+        retrievalCompletions[index](nil)
+    }
+    
 }
