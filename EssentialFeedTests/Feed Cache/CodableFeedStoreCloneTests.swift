@@ -69,14 +69,14 @@ class CodableFeedStoreCloneTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
         
+        undoSideEffects()
         
-        try? FileManager.default.removeItem(at: testSpecificStoreURLClone())
     }
     
     override func setUp() {
         super.setUp()
-        try? FileManager.default.removeItem(at: testSpecificStoreURLClone())
         
+        setupEmptyStoreState()
     }
 
     func test_retrieve_deliversEmptyOnEmptyCache(){
@@ -151,6 +151,18 @@ class CodableFeedStoreCloneTests: XCTestCase {
     
     private func testSpecificStoreURLClone() -> URL {
         return FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!.appendingPathComponent("\(type(of: self)).store")
+    }
+    
+    private func setupEmptyStoreState() {
+        deleteStoreArtifacts()
+    }
+    
+    private func undoSideEffects() {
+        deleteStoreArtifacts()
+    }
+    
+    private func deleteStoreArtifacts() {
+        try? FileManager.default.removeItem(at: testSpecificStoreURLClone())
     }
 
 }
