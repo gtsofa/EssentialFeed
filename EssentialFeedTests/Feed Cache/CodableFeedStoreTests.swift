@@ -120,16 +120,16 @@ class CodableFeedStoreTests: XCTestCase {
         
     }
     
-//    func test_insert_deliversErrorOnInsertionError() {
-//        let invalidStoreURL = URL(string: "invalid://store-url")
-//        let sut = makeSUT(storeURL: invalidStoreURL)
-//        let feed = uniqueItems().local
-//        let timestamp = Date()
-//        
-//        let insertionError = insert((feed, timestamp), to: sut)
-//        XCTAssertNotNil(insertionError, "Expected cache insertion to fail with an error")
-//        
-//    }
+    func test_insert_deliversErrorOnInsertionError() {
+        let invalidStoreURL = URL(string: "invalid://store-url")
+        let sut = makeSUT(storeURL: invalidStoreURL)
+        let feed = uniqueItems().local
+        let timestamp = Date()
+        
+        let insertionError = insert((feed, timestamp), to: sut)
+        XCTAssertNotNil(insertionError, "Expected cache insertion to fail with an error")
+        
+    }
     
     func test_delete_hasNoSideEffectsOnEmptyCache() {
         let sut = makeSUT()
@@ -153,15 +153,12 @@ class CodableFeedStoreTests: XCTestCase {
     
     }
     
-    
-    // TODO: commented until I get it to work: XCTAssertNotNil
-    
     func test_delete_deliversErrorOnDeletionError() {
         let sut = makeSUT(storeURL: noDeletePermissionURL())
 
         let deletionError = deleteCache(from: sut)
 
-        XCTAssertNil(deletionError, "Expected cache deletion to fail")
+        XCTAssertNotNil(deletionError, "Expected cache deletion to fail")
         expect(sut, toRetrieve: .empty)
 
     }
