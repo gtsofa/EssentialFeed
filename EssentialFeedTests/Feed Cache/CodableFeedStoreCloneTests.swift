@@ -125,8 +125,7 @@ class CodableFeedStoreCloneTests: XCTestCase {
     }
     
     func test_delete_deliversErrorOnDeletionError() {
-        let noDeletePermissionURL = cachesDirectory()
-        let sut = makeSUT(storeURL: noDeletePermissionURL)
+        let sut = makeSUT(storeURL: noDeletePermissionURL())
         
         let deletionError = deleteCache(from: sut)
         
@@ -184,6 +183,11 @@ class CodableFeedStoreCloneTests: XCTestCase {
         return insertionError
     }
     
+    private func noDeletePermissionURL() -> URL {
+        return FileManager.default.urls(for: .cachesDirectory, in: .systemDomainMask).first!
+    }
+    
+    @discardableResult
     private func deleteCache(from sut: FeedStore) -> Error? {
         let exp = expectation(description: "Wait for cache deletion")
         var deletionError: Error?
