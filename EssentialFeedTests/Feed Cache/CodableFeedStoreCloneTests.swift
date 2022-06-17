@@ -8,11 +8,7 @@
 import XCTest
 import EssentialFeed
 
-
-typealias FailableFeedStoreCloneSpecs = FailableRetrieveFeedStoreSpecs & FailableInsertFeedStoreSpecs & FailableDeleteFeedStoreSpecs
-
-
-class CodableFeedStoreCloneTests: XCTestCase, FailableFeedStoreCloneSpecs {
+class CodableFeedStoreTests: XCTestCase {
     
     override func tearDown() {
         super.tearDown()
@@ -201,7 +197,7 @@ class CodableFeedStoreCloneTests: XCTestCase, FailableFeedStoreCloneSpecs {
     
     private func makeSUT(storeURL: URL? = nil, file: StaticString = #file, line: UInt = #line) -> FeedStore {
         //let storeURL = testSpecificStoreURLClone()
-        let sut = CoddableFeedStoreClone(storeURL: storeURL ?? testSpecificStoreURLClone())
+        let sut = CodableFeedStore(storeURL: storeURL ?? testSpecificStoreURLClone())
         trackForMemoryLeaks(sut, file: file, line: line)
         return sut
     }
@@ -218,10 +214,6 @@ class CodableFeedStoreCloneTests: XCTestCase, FailableFeedStoreCloneSpecs {
         }
         wait(for: [exp], timeout: 1.0)
         return insertionError
-    }
-    
-    private func noDeletePermissionURL() -> URL {
-        return FileManager.default.urls(for: .cachesDirectory, in: .systemDomainMask).first!
     }
     
     @discardableResult
@@ -283,6 +275,10 @@ class CodableFeedStoreCloneTests: XCTestCase, FailableFeedStoreCloneSpecs {
     
     private func deleteStoreArtifacts() {
         try? FileManager.default.removeItem(at: testSpecificStoreURLClone())
+    }
+    
+    private func noDeletePermissionURL() -> URL {
+        return FileManager.default.urls(for: .cachesDirectory, in: .systemDomainMask).first!
     }
 
 }
