@@ -8,7 +8,7 @@
 import XCTest
 import EssentialFeed
 
-class CodableFeedStoreTests: XCTestCase {
+class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
     
     override func tearDown() {
         super.tearDown()
@@ -164,6 +164,14 @@ class CodableFeedStoreTests: XCTestCase {
         
         deleteCache(from: sut)
         expect(sut, toRetrieve: .empty)
+    }
+    
+    func test_delete_deliversNoErrorOnEmptyCache() {
+        let sut = makeSUT()
+        
+        let deletionError = deleteCache(from: sut)
+        
+        XCTAssertNil(deletionError, "Expected empty cache deletion to succeed")
     }
     
     func test_storeSideEffects_runSerially() {
