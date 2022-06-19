@@ -141,7 +141,6 @@
 				C607B042284FA150006FAB45 /* FeedStore.swift */,
 				C607B046284FFC63006FAB45 /* LocalFeedImage.swift */,
 				C6804DA72853972300DE53C0 /* FeedCachePolicy.swift */,
-				C6804DAB28565DBD00DE53C0 /* CodableFeedStore.swift */,
 				C64F7404285E562E00EE430F /* FeedStore.xcdatamodeld */,
 			);
 			path = "Feed Cache";
@@ -159,6 +158,7 @@
 		C64F7407285F903600EE430F /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				C6804DAB28565DBD00DE53C0 /* CodableFeedStore.swift */,
 				C64F7402285DF60F00EE430F /* CoreDataFeedStore.swift */,
 			);
 			path = Infrastructure;
