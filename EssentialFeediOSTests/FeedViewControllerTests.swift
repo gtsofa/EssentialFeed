@@ -81,7 +81,7 @@ class FeedViewControllerTests: XCTestCase {
         let (sut, loader) = makeSUT()
         
         sut.loadViewIfNeeded()
-        loader.completeFeedLoading(with: [image0, image1], at: 0)
+        loader.completeFeedLoading(with: [image0, image1])
         
         XCTAssertEqual(loader.loadedImageURLs, [], "Expected no image URL requests until views become visible")
         
@@ -147,7 +147,7 @@ class FeedViewControllerTests: XCTestCase {
             feedRequests.append(completion)
         }
         
-        func completeFeedLoading(with feed: [FeedItem] = [], at index: Int) {
+        func completeFeedLoading(with feed: [FeedItem] = [], at index: Int = 0) {
             feedRequests[index](.success(feed))
         }
         
