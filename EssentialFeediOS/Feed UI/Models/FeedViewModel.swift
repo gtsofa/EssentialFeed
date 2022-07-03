@@ -5,30 +5,28 @@
 //  Created by Julius on 03/07/2022.
 //
 
-import Foundation
+import UIKit
 import EssentialFeed
 
 final class FeedViewModel {
+    typealias Observer<T> = (T) -> Void
     private let feedLoader: FeedLoader
     
     init(feedLoader: FeedLoader) {
         self.feedLoader = feedLoader
     }
     
-    var onChange: ((FeedViewModel) -> Void)?
-    var onFeedLoad: (([FeedItem]) -> Void)?
+    var onLoadingStateChange: Observer<Bool>?
+    var onFeedLoad: Observer<[FeedItem]>?
     
-    private(set) var isLoading: Bool = false {
-        didSet { onChange?(self) }
-    }
     
     func loadFeed() {
-        isLoading = true
+        onLoadingStateChange?(true)
         feedLoader.load { [weak self] result in
             if let feed = try? result.get() {
                 self?.onFeedLoad?(feed)
             }
-            self?.isLoading = false
+            self?.onLoadingStateChange?(false)
         }
     }
 }
