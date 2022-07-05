@@ -15,6 +15,7 @@ struct FeedImageViewModel {
 
 class FeedViewController: UITableViewController {
     // MARK: - Properties
+    private let feed = FeedImageViewModel.prototypeFeed
     
     let feedId = "feed cell id"
 
@@ -44,13 +45,27 @@ class FeedViewController: UITableViewController {
 // MARK: - TableViewDelegate/TableViewDatasource
 extension FeedViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 12
+        return feed.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: feedId, for: indexPath) as! FeedImageCell
-        
+        let model = feed[indexPath.row]
+        cell.configure(with: model)
         return cell
+    }
+}
+
+extension FeedImageCell {
+    func configure(with model: FeedImageViewModel) {
+        locationLabel.text = model.location
+        pinImageView.isHidden = model.location == nil
+        locationLabel.isHidden = model.location == nil
+        
+        descLabel.text = model.description
+        descLabel.isHidden = model.description == nil
+        
+        feedImageView.image = UIImage(named: model.imageName)
     }
 }
 
