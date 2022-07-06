@@ -54,6 +54,10 @@ extension FeedViewController {
         cell.configure(with: model)
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 450
+    }
 }
 
 extension FeedImageCell {
@@ -65,7 +69,7 @@ extension FeedImageCell {
         descLabel.text = model.description
         descLabel.isHidden = model.description == nil
         
-        feedImageView.image = UIImage(named: model.imageName)
+        fadeIn(UIImage(named: model.imageName))
     }
 }
 
@@ -94,6 +98,7 @@ class FeedImageCell: UITableViewCell {
     lazy var pinImageView: UIImageView = {
         let iv = UIImageView()
         iv.image = UIImage(named: "pin")
+        //iv.heightAnchor.constraint(equalToConstant: 28).isActive = true
         iv.clipsToBounds = true
         iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
@@ -114,7 +119,7 @@ class FeedImageCell: UITableViewCell {
         label.text = "Location, Location"
         label.font = .systemFont(ofSize: 15, weight: .regular)
         label.textColor = UIColor.hex("9B9B9B")
-        label.numberOfLines = 0
+        label.numberOfLines = 2
         return label
     }()
     
@@ -124,9 +129,33 @@ class FeedImageCell: UITableViewCell {
         label.font = .systemFont(ofSize: 16, weight: .regular)
         label.textColor = UIColor.hex("4A4A4A")
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.numberOfLines = 0
+        label.numberOfLines = 6
         return label
     }()
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        feedImageView.alpha = 0
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        feedImageView.alpha = 0
+    }
+    
+    func fadeIn(_ image: UIImage?) {
+        feedImageView.image = image
+        
+        UIView.animate(
+            withDuration: 0.3,
+            delay: 0.3,
+            options: [],
+            animations: {
+                self.feedImageView.alpha = 1
+            })
+    }
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {
