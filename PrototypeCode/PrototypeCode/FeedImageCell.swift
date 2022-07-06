@@ -117,13 +117,21 @@ class FeedImageCell: UITableViewCell {
             outerContainer.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
             outerContainer.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0)])
         
-        let locationContainer = UIStackView(arrangedSubviews: [pinImageView, locationLabel])
+        let locationContainer = UIStackView(arrangedSubviews: [pinImageView])
         locationContainer.axis = .horizontal
         locationContainer.spacing = 6
         locationContainer.distribution = .fill
         locationContainer.alignment = .fill
         addSubview(locationContainer)
-        locationContainer.frame = CGRect(x: 20, y: 30, width: frame.width - 10, height: 28)
+        locationContainer.frame = CGRect(x: 20, y: 30, width: frame.width - 310, height: 16)
+        
+        let locationTextContainer = UIStackView(arrangedSubviews: [locationLabel])
+        locationTextContainer.axis = .horizontal
+        locationTextContainer.spacing = 6
+        locationTextContainer.distribution = .fill
+        locationTextContainer.alignment = .fill
+        addSubview(locationTextContainer)
+        locationTextContainer.frame = CGRect(x: 40, y: 15, width: frame.width - 10, height: 36)
         
         feedImageContainerView.topAnchor.constraint(equalTo: locationContainer.bottomAnchor, constant: 10).isActive = true
         feedImageContainerView.leftAnchor.constraint(equalTo: outerContainer.leftAnchor, constant: 10).isActive = true
