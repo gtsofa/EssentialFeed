@@ -163,7 +163,10 @@
 				C62F19A6287455CD007A773C /* AppDelegate.swift in Sources */,
 				C62F19BA287458C1007A773C /* FeedViewController.swift in Sources */,
 				C62F19A8287455CD007A773C /* SceneDelegate.swift in Sources */,
+<<<<<<< HEAD
 				C66151CF2875CC05000B45E5 /* FeedImageViewModel.swift in Sources */,
+=======
+>>>>>>> 1466e90904f28dc282962e7c3354ebdbd2009648
 				C62F19BD287459A4007A773C /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
