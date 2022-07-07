@@ -18,12 +18,15 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
         self.refreshController = refreshController
     }
     
+    let feedcellid = "FeedImageCell"
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.prefetchDataSource = self
         refreshControl = refreshController?.view
         refreshController?.refresh()
+        tableView.register(FeedImageCell.self, forCellReuseIdentifier: feedcellid)
         
     }
     
@@ -32,7 +35,7 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     }
     
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return cellController(forRowAt: indexPath).view()
+        return cellController(forRowAt: indexPath).view(in: tableView)
     }
     
     public override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
