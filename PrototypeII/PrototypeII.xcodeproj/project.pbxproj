@@ -14,6 +14,7 @@
 		C6EB415428927236009B0875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EB415228927236009B0875 /* LaunchScreen.storyboard */; };
 		C6EB415C2892930A009B0875 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB415B28929309009B0875 /* FeedViewController.swift */; };
 		C6EB415E289298A3009B0875 /* FeedImageViewModel+PrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB415D289298A3009B0875 /* FeedImageViewModel+PrototypeData.swift */; };
+		C6EB416028929A75009B0875 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB415F28929A75009B0875 /* FeedImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C6EB415528927236009B0875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6EB415B28929309009B0875 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		C6EB415D289298A3009B0875 /* FeedImageViewModel+PrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageViewModel+PrototypeData.swift"; sourceTree = "<group>"; };
+		C6EB415F28929A75009B0875 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C6EB415528927236009B0875 /* Info.plist */,
 				C6EB415B28929309009B0875 /* FeedViewController.swift */,
 				C6EB415D289298A3009B0875 /* FeedImageViewModel+PrototypeData.swift */,
+				C6EB415F28929A75009B0875 /* FeedImageCell.swift */,
 			);
 			path = PrototypeII;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				C6EB415C2892930A009B0875 /* FeedViewController.swift in Sources */,
 				C6EB414A28927232009B0875 /* SceneDelegate.swift in Sources */,
 				C6EB415E289298A3009B0875 /* FeedImageViewModel+PrototypeData.swift in Sources */,
+				C6EB416028929A75009B0875 /* FeedImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
