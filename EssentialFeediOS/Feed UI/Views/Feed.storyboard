@@ -74,11 +74,15 @@ Location</string>
                                                         </imageView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmn-Z8-LW2">
                                                             <rect key="frame" x="0.0" y="374" width="374" height="0.0"/>
+                                                            <accessibility key="accessibilityConfiguration" label="FeedImageRetryButton"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="↻">
                                                                 <fontDescription key="titleFontDescription" type="system" pointSize="60"/>
                                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="a26-cV-ibv" eventType="valueChanged" id="Wvj-aS-iF7"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -121,6 +125,13 @@ Location</string>
                                         <constraint firstItem="PPM-sc-AAs" firstAttribute="top" secondItem="Irs-TV-7cy" secondAttribute="topMargin" priority="999" constant="6" id="tRG-0S-pwr"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="lrk-0V-x3f" id="S7J-UA-h3E"/>
+                                    <outlet property="feedImageContainer" destination="rvg-PZ-XlA" id="8Vn-wL-sYu"/>
+                                    <outlet property="feedImageView" destination="fLC-1v-nou" id="HAQ-bB-gob"/>
+                                    <outlet property="locationContainer" destination="lo1-ae-3vx" id="dfS-qj-KtP"/>
+                                    <outlet property="locationLabel" destination="Ph1-rr-IPQ" id="3hP-gk-OCi"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
