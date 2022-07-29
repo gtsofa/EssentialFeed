@@ -32,15 +32,18 @@ final class FeedPresenter {
     }
     
     func didStartLoadingFeed() {
+        
         loadingView.display(FeedLoadingViewModel(isLoading: true))
     }
     
     func didFinishLoadingFeed(with feed: [FeedItem]) {
+        
         feedView.display(FeedViewModel(feed: feed))
         loadingView.display(FeedLoadingViewModel(isLoading: false))
     }
     
     func didFinishLoadingFeed(with error: Error) {
+        
         loadingView.display(FeedLoadingViewModel(isLoading: false))
     }
 }
