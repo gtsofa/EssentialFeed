@@ -73,6 +73,7 @@
 		C65A0D03289828BD00C7D5EB /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65A0D02289828BD00C7D5EB /* FeedPresenter.swift */; };
 		C65A0D0428982A6600C7D5EB /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = C65A0CFE2898265A00C7D5EB /* Feed.strings */; };
 		C65A0D0628982B0E00C7D5EB /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65A0D0528982B0E00C7D5EB /* FeedViewModel.swift */; };
+		C65A0D0828982B6200C7D5EB /* FeedLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65A0D0728982B6200C7D5EB /* FeedLoadingViewModel.swift */; };
 		C662522928943017004BD745 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C662522828943017004BD745 /* Feed.storyboard */; };
 		C662522D28943227004BD745 /* Feed.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C662522C28943227004BD745 /* Feed.xcassets */; };
 		C676362F2821639D0012D084 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C676362E2821639D0012D084 /* XCTestCase+MemoryLeakTracking.swift */; };
@@ -204,6 +205,7 @@
 		C65A0D002898265D00C7D5EB /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
 		C65A0D02289828BD00C7D5EB /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		C65A0D0528982B0E00C7D5EB /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		C65A0D0728982B6200C7D5EB /* FeedLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoadingViewModel.swift; sourceTree = "<group>"; };
 		C662522828943017004BD745 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		C662522C28943227004BD745 /* Feed.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Feed.xcassets; sourceTree = "<group>"; };
 		C676362E2821639D0012D084 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
@@ -485,6 +487,7 @@
 				C65A0D02289828BD00C7D5EB /* FeedPresenter.swift */,
 				C65A0CFE2898265A00C7D5EB /* Feed.strings */,
 				C65A0D0528982B0E00C7D5EB /* FeedViewModel.swift */,
+				C65A0D0728982B6200C7D5EB /* FeedLoadingViewModel.swift */,
 			);
 			path = "Feed Presentation";
 			sourceTree = "<group>";
@@ -913,6 +916,7 @@
 				C6763631282198E90012D084 /* URLSessionHTTPClient.swift in Sources */,
 				C64F740C285F929E00EE430F /* ManagedCache.swift in Sources */,
 				C64F7403285DF60F00EE430F /* CoreDataFeedStore.swift in Sources */,
+				C65A0D0828982B6200C7D5EB /* FeedLoadingViewModel.swift in Sources */,
 				C64F740E285F932900EE430F /* ManagedFeedImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
