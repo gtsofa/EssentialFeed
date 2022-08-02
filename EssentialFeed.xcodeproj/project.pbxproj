@@ -22,6 +22,7 @@
 		C607B047284FFC63006FAB45 /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C607B046284FFC63006FAB45 /* LocalFeedImage.swift */; };
 		C60A501F289876C900552AF3 /* FeedImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A501D289875FD00552AF3 /* FeedImagePresenter.swift */; };
 		C60A5021289877C400552AF3 /* FeedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A5020289877C400552AF3 /* FeedImageViewModel.swift */; };
+		C60A502228990CB500552AF3 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C646903128710355006DB7A6 /* FeedImageDataLoader.swift */; };
 		C6178475286D6A3C007E9B31 /* FeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6178474286D6A3C007E9B31 /* FeedUIIntegrationTests.swift */; };
 		C6178477286D7436007E9B31 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B8FD8A280D8CA100030892 /* EssentialFeed.framework */; platformFilter = ios; };
 		C6178478286D7436007E9B31 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C6B8FD8A280D8CA100030892 /* EssentialFeed.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -40,7 +41,6 @@
 		C64690292870FC2B006DB7A6 /* FeedImageCell+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64690282870FC2B006DB7A6 /* FeedImageCell+TestHelpers.swift */; };
 		C646902B2870FD1E006DB7A6 /* FeedViewControllerTests+LoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C646902A2870FD1E006DB7A6 /* FeedViewControllerTests+LoaderSpy.swift */; };
 		C646902D2870FE57006DB7A6 /* FeedViewControllerTests+Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C646902C2870FE57006DB7A6 /* FeedViewControllerTests+Assertions.swift */; };
-		C646903228710355006DB7A6 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C646903128710355006DB7A6 /* FeedImageDataLoader.swift */; };
 		C64690362871B6CA006DB7A6 /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64690352871B6CA006DB7A6 /* FeedImageCellController.swift */; };
 		C64690392871BFB9006DB7A6 /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64690382871BFB9006DB7A6 /* FeedUIComposer.swift */; };
 		C64F73FD285D2F8100EE430F /* FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F73FC285D2F8100EE430F /* FeedStoreSpecs.swift */; };
@@ -367,14 +367,6 @@
 			path = "Feed UI";
 			sourceTree = "<group>";
 		};
-		C6469030287102FD006DB7A6 /* Feed Image Loader */ = {
-			isa = PBXGroup;
-			children = (
-				C646903128710355006DB7A6 /* FeedImageDataLoader.swift */,
-			);
-			path = "Feed Image Loader";
-			sourceTree = "<group>";
-		};
 		C64690372871BF8B006DB7A6 /* Composers */ = {
 			isa = PBXGroup;
 			children = (
@@ -499,7 +491,6 @@
 			isa = PBXGroup;
 			children = (
 				C646904328733132006DB7A6 /* Feed Presentation */,
-				C6469030287102FD006DB7A6 /* Feed Image Loader */,
 				C646902E28710059006DB7A6 /* Feed UI */,
 			);
 			path = EssentialFeediOS;
@@ -565,6 +556,7 @@
 		C6B8FDA8280D901900030892 /* Feed Feature */ = {
 			isa = PBXGroup;
 			children = (
+				C646903128710355006DB7A6 /* FeedImageDataLoader.swift */,
 				C6B8FDA4280D8D3A00030892 /* FeedItem.swift */,
 				C6B8FDA6280D8EEB00030892 /* FeedLoader.swift */,
 			);
@@ -836,7 +828,6 @@
 				C65A0CEF2897D25300C7D5EB /* ErrorView.swift in Sources */,
 				C65A0CF42897E00A00C7D5EB /* UIRefreshControl+Helpers.swift in Sources */,
 				C603ABD0287A0BAD00865E94 /* WeakRefVirtualProxy.swift in Sources */,
-				C646903228710355006DB7A6 /* FeedImageDataLoader.swift in Sources */,
 				C603ABBA28770B0200865E94 /* UITableView+Dequeueing.swift in Sources */,
 				C6469018287068BE006DB7A6 /* UIView+Shimmering.swift in Sources */,
 				C603ABBC28771CDB00865E94 /* UIImageView+Animations.swift in Sources */,
@@ -891,6 +882,7 @@
 				C64F740C285F929E00EE430F /* ManagedCache.swift in Sources */,
 				C64F7403285DF60F00EE430F /* CoreDataFeedStore.swift in Sources */,
 				C65A0D0A28982BC100C7D5EB /* FeedErrorViewModel.swift in Sources */,
+				C60A502228990CB500552AF3 /* FeedImageDataLoader.swift in Sources */,
 				C65A0D0828982B6200C7D5EB /* FeedLoadingViewModel.swift in Sources */,
 				C60A501F289876C900552AF3 /* FeedImagePresenter.swift in Sources */,
 				C64F740E285F932900EE430F /* ManagedFeedImage.swift in Sources */,
