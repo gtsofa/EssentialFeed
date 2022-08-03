@@ -14,3 +14,7 @@ public func anyURL() -> URL {
 public func anyNSError() -> NSError {
     return NSError(domain: "any error", code: 0)
 }
+
+func anyData() -> Data {
+    return Data.init(_: "any data".utf8)
+}
