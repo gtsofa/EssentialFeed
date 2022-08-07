@@ -14,6 +14,10 @@
 		C61FF52B289F3FD30094F6A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61FF52A289F3FD30094F6A2 /* Assets.xcassets */; };
 		C61FF52E289F3FD30094F6A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61FF52C289F3FD30094F6A2 /* LaunchScreen.storyboard */; };
 		C61FF539289F3FD40094F6A2 /* EssentialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61FF538289F3FD40094F6A2 /* EssentialAppTests.swift */; };
+		C61FF553289F42130094F6A2 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61FF552289F42130094F6A2 /* EssentialFeed.framework */; };
+		C61FF554289F42130094F6A2 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C61FF552289F42130094F6A2 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C61FF557289F42200094F6A2 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61FF556289F42200094F6A2 /* EssentialFeediOS.framework */; };
+		C61FF558289F42200094F6A2 /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C61FF556289F42200094F6A2 /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,14 +28,22 @@
 			remoteGlobalIDString = C61FF51D289F3FCE0094F6A2;
 			remoteInfo = EssentialApp;
 		};
-		C61FF53F289F3FD40094F6A2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C61FF516289F3FCE0094F6A2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C61FF51D289F3FCE0094F6A2;
-			remoteInfo = EssentialApp;
-		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C61FF555289F42130094F6A2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C61FF554289F42130094F6A2 /* EssentialFeed.framework in Embed Frameworks */,
+				C61FF558289F42200094F6A2 /* EssentialFeediOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C61FF51E289F3FCE0094F6A2 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +56,8 @@
 		C61FF52F289F3FD30094F6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C61FF534289F3FD40094F6A2 /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61FF538289F3FD40094F6A2 /* EssentialAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppTests.swift; sourceTree = "<group>"; };
-		C61FF53E289F3FD40094F6A2 /* EssentialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C61FF552289F42130094F6A2 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C61FF556289F42200094F6A2 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,17 +65,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61FF553289F42130094F6A2 /* EssentialFeed.framework in Frameworks */,
+				C61FF557289F42200094F6A2 /* EssentialFeediOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C61FF531289F3FD40094F6A2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C61FF53B289F3FD40094F6A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,6 +86,7 @@
 				C61FF520289F3FCE0094F6A2 /* EssentialApp */,
 				C61FF537289F3FD40094F6A2 /* EssentialAppTests */,
 				C61FF51F289F3FCE0094F6A2 /* Products */,
+				C61FF551289F42130094F6A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,7 +95,6 @@
 			children = (
 				C61FF51E289F3FCE0094F6A2 /* EssentialApp.app */,
 				C61FF534289F3FD40094F6A2 /* EssentialAppTests.xctest */,
-				C61FF53E289F3FD40094F6A2 /* EssentialAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +121,15 @@
 			path = EssentialAppTests;
 			sourceTree = "<group>";
 		};
+		C61FF551289F42130094F6A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C61FF556289F42200094F6A2 /* EssentialFeediOS.framework */,
+				C61FF552289F42130094F6A2 /* EssentialFeed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,6 +140,7 @@
 				C61FF51A289F3FCE0094F6A2 /* Sources */,
 				C61FF51B289F3FCE0094F6A2 /* Frameworks */,
 				C61FF51C289F3FCE0094F6A2 /* Resources */,
+				C61FF555289F42130094F6A2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,24 +169,6 @@
 			productReference = C61FF534289F3FD40094F6A2 /* EssentialAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C61FF53D289F3FD40094F6A2 /* EssentialAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C61FF54E289F3FD40094F6A2 /* Build configuration list for PBXNativeTarget "EssentialAppUITests" */;
-			buildPhases = (
-				C61FF53A289F3FD40094F6A2 /* Sources */,
-				C61FF53B289F3FD40094F6A2 /* Frameworks */,
-				C61FF53C289F3FD40094F6A2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C61FF540289F3FD40094F6A2 /* PBXTargetDependency */,
-			);
-			name = EssentialAppUITests;
-			productName = EssentialAppUITests;
-			productReference = C61FF53E289F3FD40094F6A2 /* EssentialAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,10 +183,6 @@
 						CreatedOnToolsVersion = 13.4.1;
 					};
 					C61FF533289F3FD40094F6A2 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = C61FF51D289F3FCE0094F6A2;
-					};
-					C61FF53D289F3FD40094F6A2 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = C61FF51D289F3FCE0094F6A2;
 					};
@@ -207,7 +203,6 @@
 			targets = (
 				C61FF51D289F3FCE0094F6A2 /* EssentialApp */,
 				C61FF533289F3FD40094F6A2 /* EssentialAppTests */,
-				C61FF53D289F3FD40094F6A2 /* EssentialAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -224,13 +219,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C61FF532289F3FD40094F6A2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C61FF53C289F3FD40094F6A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,13 +246,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C61FF53A289F3FD40094F6A2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -272,11 +253,6 @@
 			isa = PBXTargetDependency;
 			target = C61FF51D289F3FCE0094F6A2 /* EssentialApp */;
 			targetProxy = C61FF535289F3FD40094F6A2 /* PBXContainerItemProxy */;
-		};
-		C61FF540289F3FD40094F6A2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C61FF51D289F3FCE0094F6A2 /* EssentialApp */;
-			targetProxy = C61FF53F289F3FD40094F6A2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -510,42 +486,6 @@
 			};
 			name = Release;
 		};
-		C61FF54F289F3FD40094F6A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DR7JKZZ273;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = gtsofa.com.EssentialAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EssentialApp;
-			};
-			name = Debug;
-		};
-		C61FF550289F3FD40094F6A2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DR7JKZZ273;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = gtsofa.com.EssentialAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EssentialApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,15 +512,6 @@
 			buildConfigurations = (
 				C61FF54C289F3FD40094F6A2 /* Debug */,
 				C61FF54D289F3FD40094F6A2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C61FF54E289F3FD40094F6A2 /* Build configuration list for PBXNativeTarget "EssentialAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C61FF54F289F3FD40094F6A2 /* Debug */,
-				C61FF550289F3FD40094F6A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
