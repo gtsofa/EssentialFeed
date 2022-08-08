@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6007B5F28A17C550006BC2D /* FeedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6007B5E28A17C550006BC2D /* FeedCache.swift */; };
 		C603ABBA28770B0200865E94 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603ABB928770B0200865E94 /* UITableView+Dequeueing.swift */; };
 		C603ABBC28771CDB00865E94 /* UIImageView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603ABBB28771CDB00865E94 /* UIImageView+Animations.swift */; };
 		C603ABC4287733B900865E94 /* FeedViewControllerTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603ABC3287733B900865E94 /* FeedViewControllerTests+Localization.swift */; };
@@ -153,6 +154,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C6007B5E28A17C550006BC2D /* FeedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCache.swift; sourceTree = "<group>"; };
 		C603ABB928770B0200865E94 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
 		C603ABBB28771CDB00865E94 /* UIImageView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Animations.swift"; sourceTree = "<group>"; };
 		C603ABC3287733B900865E94 /* FeedViewControllerTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTests+Localization.swift"; sourceTree = "<group>"; };
@@ -614,6 +616,7 @@
 				C646903128710355006DB7A6 /* FeedImageDataLoader.swift */,
 				C6B8FDA4280D8D3A00030892 /* FeedItem.swift */,
 				C6B8FDA6280D8EEB00030892 /* FeedLoader.swift */,
+				C6007B5E28A17C550006BC2D /* FeedCache.swift */,
 			);
 			path = "Feed Feature";
 			sourceTree = "<group>";
@@ -946,6 +949,7 @@
 				C64C3AB5289AD0B400AED69F /* LocalFeedImageDataLoader.swift in Sources */,
 				C64C3ABD289C174100AED69F /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */,
 				C60A501F289876C900552AF3 /* FeedImagePresenter.swift in Sources */,
+				C6007B5F28A17C550006BC2D /* FeedCache.swift in Sources */,
 				C64F740E285F932900EE430F /* ManagedFeedImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
