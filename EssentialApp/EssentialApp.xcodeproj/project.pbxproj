@@ -50,6 +50,7 @@
 		C6007BCF28A30C380006BC2D /* FeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6007BCE28A30C380006BC2D /* FeedUIIntegrationTests.swift */; };
 		C6007BD128A30D8D0006BC2D /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6007BD028A30D8D0006BC2D /* FeedAcceptanceTests.swift */; };
 		C6007BD328A316730006BC2D /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6007BD228A316730006BC2D /* HTTPClientStub.swift */; };
+		C6007BD528A3170E0006BC2D /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6007BD428A3170E0006BC2D /* InMemoryFeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		C6007BCE28A30C380006BC2D /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		C6007BD028A30D8D0006BC2D /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 		C6007BD228A316730006BC2D /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
+		C6007BD428A3170E0006BC2D /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 				C6007B6428A18ADA0006BC2D /* FeedImageDataLoaderSpy.swift */,
 				C6007B6628A1B4630006BC2D /* XCTestCase+FeedImageDataLoader.swift */,
 				C6007BD228A316730006BC2D /* HTTPClientStub.swift */,
+				C6007BD428A3170E0006BC2D /* InMemoryFeedStore.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				C6007BCC28A303F40006BC2D /* FeedViewControllerTests+Localization.swift in Sources */,
 				C6007B7E28A2D9290006BC2D /* SceneDelegateTests.swift in Sources */,
 				C6007B5928A16D9A0006BC2D /* FeedLoaderCacheDecoratorTests.swift in Sources */,
+				C6007BD528A3170E0006BC2D /* InMemoryFeedStore.swift in Sources */,
 				C6007BC628A303F40006BC2D /* FeedViewController+TestHelpers.swift in Sources */,
 				C6007B6528A18ADA0006BC2D /* FeedImageDataLoaderSpy.swift in Sources */,
 				C6007B5028A0665D0006BC2D /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
