@@ -75,6 +75,7 @@
 		C66033B228A469A800485734 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66033B128A469A800485734 /* UIImage+TestHelpers.swift */; };
 		C66033B428A46AE700485734 /* UITableView+HeaderSizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66033B328A46AE700485734 /* UITableView+HeaderSizing.swift */; };
 		C66033B628A486E400485734 /* UIViewController+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66033B528A486E400485734 /* UIViewController+Snapshot.swift */; };
+		C66033B828A487CB00485734 /* XCTestCase+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66033B728A487CB00485734 /* XCTestCase+Snapshot.swift */; };
 		C662522928943017004BD745 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C662522828943017004BD745 /* Feed.storyboard */; };
 		C662522D28943227004BD745 /* Feed.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C662522C28943227004BD745 /* Feed.xcassets */; };
 		C676362F2821639D0012D084 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C676362E2821639D0012D084 /* XCTestCase+MemoryLeakTracking.swift */; };
@@ -204,6 +205,7 @@
 		C66033B128A469A800485734 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 		C66033B328A46AE700485734 /* UITableView+HeaderSizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+HeaderSizing.swift"; sourceTree = "<group>"; };
 		C66033B528A486E400485734 /* UIViewController+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Snapshot.swift"; sourceTree = "<group>"; };
+		C66033B728A487CB00485734 /* XCTestCase+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Snapshot.swift"; sourceTree = "<group>"; };
 		C662522828943017004BD745 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		C662522C28943227004BD745 /* Feed.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Feed.xcassets; sourceTree = "<group>"; };
 		C676362E2821639D0012D084 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
@@ -467,6 +469,7 @@
 			children = (
 				C66033B128A469A800485734 /* UIImage+TestHelpers.swift */,
 				C66033B528A486E400485734 /* UIViewController+Snapshot.swift */,
+				C66033B728A487CB00485734 /* XCTestCase+Snapshot.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -851,6 +854,7 @@
 			files = (
 				C617847C286D76E5007E9B31 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				C6007BDF28A45D7D0006BC2D /* FeedSnapshotTests.swift in Sources */,
+				C66033B828A487CB00485734 /* XCTestCase+Snapshot.swift in Sources */,
 				C66033B628A486E400485734 /* UIViewController+Snapshot.swift in Sources */,
 				C66033B228A469A800485734 /* UIImage+TestHelpers.swift in Sources */,
 			);
