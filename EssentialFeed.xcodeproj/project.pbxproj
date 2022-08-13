@@ -94,6 +94,7 @@
 		C6CAB60228A7DC2C00D754D5 /* ImageComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAB60128A7DC2C00D754D5 /* ImageComment.swift */; };
 		C6CAB60C28A81FE600D754D5 /* RemoteLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAB60B28A81FE600D754D5 /* RemoteLoaderTests.swift */; };
 		C6CAB60E28A8204200D754D5 /* RemoteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAB60D28A8204200D754D5 /* RemoteLoader.swift */; };
+		C6CAB61028A837D600D754D5 /* FeedItemsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAB60F28A837D600D754D5 /* FeedItemsMapperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -233,6 +234,7 @@
 		C6CAB60128A7DC2C00D754D5 /* ImageComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageComment.swift; sourceTree = "<group>"; };
 		C6CAB60B28A81FE600D754D5 /* RemoteLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoaderTests.swift; sourceTree = "<group>"; };
 		C6CAB60D28A8204200D754D5 /* RemoteLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoader.swift; sourceTree = "<group>"; };
+		C6CAB60F28A837D600D754D5 /* FeedItemsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +349,7 @@
 				C60A502D289A4EB600552AF3 /* Helpers */,
 				C682A7F5280F68D5006DE914 /* LoadFeedFromRemoteUseCaseTests.swift */,
 				C60A50232899514700552AF3 /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
+				C6CAB60F28A837D600D754D5 /* FeedItemsMapperTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -1013,6 +1016,7 @@
 				C6579E8D2850B84300B2B526 /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
 				C64C3AAF289A6ABB00AED69F /* URLProtocolStub.swift in Sources */,
 				C64F73FD285D2F8100EE430F /* FeedStoreSpecs.swift in Sources */,
+				C6CAB61028A837D600D754D5 /* FeedItemsMapperTests.swift in Sources */,
 				C676362F2821639D0012D084 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				C64F73FF285D316800EE430F /* XCTestCase+FeedStoreSpecs.swift in Sources */,
 				C60A502A2899862000552AF3 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
