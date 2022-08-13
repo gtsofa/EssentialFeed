@@ -345,7 +345,6 @@
 				C60A502D289A4EB600552AF3 /* Helpers */,
 				C682A7F5280F68D5006DE914 /* LoadFeedFromRemoteUseCaseTests.swift */,
 				C60A50232899514700552AF3 /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
-				C6CAB5FA28A7CD5600D754D5 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -497,8 +496,6 @@
 				C62324A9281D4A620078F1DC /* FeedItemsMapper.swift */,
 				C607B044284FFBE2006FAB45 /* RemoteFeedItem.swift */,
 				C60A5030289A500800552AF3 /* RemoteFeedImageDataLoader.swift */,
-				C6CAB5FC28A7CE4700D754D5 /* RemoteImageCommentsLoader.swift */,
-				C6CAB5FE28A7CEA100D754D5 /* ImageCommentsMapper.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -551,6 +548,7 @@
 		C6B8FD8C280D8CA100030892 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				C6CAB60928A815BB00D754D5 /* Image Comments API */,
 				C6CAB60428A8144D00D754D5 /* Shared API */,
 				C6CAB60328A813E100D754D5 /* Shared API Infra */,
 				C6CAB60028A7DC1100D754D5 /* Image Comments Feature */,
@@ -565,6 +563,7 @@
 		C6B8FD98280D8CA200030892 /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				C6CAB60A28A8163800D754D5 /* Image Comments API */,
 				C6CAB60628A814A700D754D5 /* Shared API Infra */,
 				C6CAB60528A8149B00D754D5 /* Shared API */,
 				C65A0CF52897FFDE00C7D5EB /* Feed Presentation */,
@@ -641,6 +640,23 @@
 				C64C3AAE289A6ABB00AED69F /* URLProtocolStub.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C6CAB60928A815BB00D754D5 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				C6CAB5FE28A7CEA100D754D5 /* ImageCommentsMapper.swift */,
+				C6CAB5FC28A7CE4700D754D5 /* RemoteImageCommentsLoader.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
+		C6CAB60A28A8163800D754D5 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				C6CAB5FA28A7CD5600D754D5 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
+			);
+			path = "Image Comments API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
