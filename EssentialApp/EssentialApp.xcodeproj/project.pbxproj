@@ -39,6 +39,7 @@
 		C6007BD528A3170E0006BC2D /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6007BD428A3170E0006BC2D /* InMemoryFeedStore.swift */; };
 		C66033BC28A4976600485734 /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66033BB28A4976500485734 /* UIView+TestHelpers.swift */; };
 		C6A31CB928A6A34B000AD0FB /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A31CB828A6A34B000AD0FB /* CombineHelpers.swift */; };
+		C6CAB63228A9817100D754D5 /* LoadResourcePresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAB63128A9817100D754D5 /* LoadResourcePresentationAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		C6007BD428A3170E0006BC2D /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
 		C66033BB28A4976500485734 /* UIView+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TestHelpers.swift"; sourceTree = "<group>"; };
 		C6A31CB828A6A34B000AD0FB /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
+		C6CAB63128A9817100D754D5 /* LoadResourcePresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresentationAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				C6007B1E28A0468B0006BC2D /* LaunchScreen.storyboard */,
 				C6007B2128A0468B0006BC2D /* Info.plist */,
 				C6A31CB828A6A34B000AD0FB /* CombineHelpers.swift */,
+				C6CAB63128A9817100D754D5 /* LoadResourcePresentationAdapter.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				C6007BBA28A303A60006BC2D /* FeedUIComposer.swift in Sources */,
 				C6007B1628A046890006BC2D /* SceneDelegate.swift in Sources */,
 				C6007BB628A303A60006BC2D /* FeedViewAdapter.swift in Sources */,
+				C6CAB63228A9817100D754D5 /* LoadResourcePresentationAdapter.swift in Sources */,
 				C6007BB928A303A60006BC2D /* WeakRefVirtualProxy.swift in Sources */,
 				C6007BBB28A303A60006BC2D /* FeedLoaderPresentationAdapter.swift in Sources */,
 			);
