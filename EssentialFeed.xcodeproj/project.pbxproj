@@ -62,7 +62,7 @@
 		C65A0CF92898254A00C7D5EB /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6804DA528523C0D00DE53C0 /* SharedTestHelpers.swift */; };
 		C65A0D03289828BD00C7D5EB /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65A0D02289828BD00C7D5EB /* FeedPresenter.swift */; };
 		C65A0D0628982B0E00C7D5EB /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65A0D0528982B0E00C7D5EB /* FeedViewModel.swift */; };
-		C65A0D0828982B6200C7D5EB /* FeedLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65A0D0728982B6200C7D5EB /* FeedLoadingViewModel.swift */; };
+		C65A0D0828982B6200C7D5EB /* ResourceLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65A0D0728982B6200C7D5EB /* ResourceLoadingViewModel.swift */; };
 		C65A0D0A28982BC100C7D5EB /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65A0D0928982BC100C7D5EB /* FeedErrorViewModel.swift */; };
 		C65A0D152898301700C7D5EB /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = C65A0D172898301700C7D5EB /* Feed.strings */; };
 		C65A0D1A289833A900C7D5EB /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603ABCB28774D5500865E94 /* FeedLocalizationTests.swift */; };
@@ -93,6 +93,7 @@
 		C6CAB61F28A9479700D754D5 /* Shared.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6CAB62128A9479700D754D5 /* Shared.strings */; };
 		C6CAB62528A949E500D754D5 /* SharedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAB62428A949E500D754D5 /* SharedLocalizationTests.swift */; };
 		C6CAB62728A94B4300D754D5 /* SharedLocalizationTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAB62628A94B4300D754D5 /* SharedLocalizationTestHelpers.swift */; };
+		C6CAB62C28A9722000D754D5 /* ResourceLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAB62B28A9722000D754D5 /* ResourceLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,7 +197,7 @@
 		C65A0CF62898002300C7D5EB /* FeedPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterTests.swift; sourceTree = "<group>"; };
 		C65A0D02289828BD00C7D5EB /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		C65A0D0528982B0E00C7D5EB /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
-		C65A0D0728982B6200C7D5EB /* FeedLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoadingViewModel.swift; sourceTree = "<group>"; };
+		C65A0D0728982B6200C7D5EB /* ResourceLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoadingViewModel.swift; sourceTree = "<group>"; };
 		C65A0D0928982BC100C7D5EB /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
 		C65A0D162898301700C7D5EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		C65A0D182898301B00C7D5EB /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
@@ -233,6 +234,7 @@
 		C6CAB62328A9479A00D754D5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Shared.strings"; sourceTree = "<group>"; };
 		C6CAB62428A949E500D754D5 /* SharedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTests.swift; sourceTree = "<group>"; };
 		C6CAB62628A94B4300D754D5 /* SharedLocalizationTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTestHelpers.swift; sourceTree = "<group>"; };
+		C6CAB62B28A9722000D754D5 /* ResourceLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,7 +464,6 @@
 			children = (
 				C65A0D02289828BD00C7D5EB /* FeedPresenter.swift */,
 				C65A0D0528982B0E00C7D5EB /* FeedViewModel.swift */,
-				C65A0D0728982B6200C7D5EB /* FeedLoadingViewModel.swift */,
 				C65A0D0928982BC100C7D5EB /* FeedErrorViewModel.swift */,
 				C60A501D289875FD00552AF3 /* FeedImagePresenter.swift */,
 				C65A0D172898301700C7D5EB /* Feed.strings */,
@@ -663,6 +664,8 @@
 			isa = PBXGroup;
 			children = (
 				C6CAB61828A933C500D754D5 /* LoadResourcePresenter.swift */,
+				C65A0D0728982B6200C7D5EB /* ResourceLoadingViewModel.swift */,
+				C6CAB62B28A9722000D754D5 /* ResourceLoadingView.swift */,
 				C6CAB62128A9479700D754D5 /* Shared.strings */,
 			);
 			path = "Shared Presentation";
@@ -988,11 +991,12 @@
 				C65A0D03289828BD00C7D5EB /* FeedPresenter.swift in Sources */,
 				C6763631282198E90012D084 /* URLSessionHTTPClient.swift in Sources */,
 				C64C3AAD289A622900AED69F /* HTTPURLResponse+StatusCode.swift in Sources */,
+				C6CAB62C28A9722000D754D5 /* ResourceLoadingView.swift in Sources */,
 				C64F740C285F929E00EE430F /* ManagedCache.swift in Sources */,
 				C64F7403285DF60F00EE430F /* CoreDataFeedStore.swift in Sources */,
 				C65A0D0A28982BC100C7D5EB /* FeedErrorViewModel.swift in Sources */,
 				C60A502228990CB500552AF3 /* FeedImageDataLoader.swift in Sources */,
-				C65A0D0828982B6200C7D5EB /* FeedLoadingViewModel.swift in Sources */,
+				C65A0D0828982B6200C7D5EB /* ResourceLoadingViewModel.swift in Sources */,
 				C64C3AB5289AD0B400AED69F /* LocalFeedImageDataLoader.swift in Sources */,
 				C64C3ABD289C174100AED69F /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */,
 				C60A501F289876C900552AF3 /* FeedImagePresenter.swift in Sources */,
