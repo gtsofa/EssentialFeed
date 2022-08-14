@@ -90,6 +90,8 @@
 		C6CAB61628A84E4000D754D5 /* FeedImageDataMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAB61528A84E4000D754D5 /* FeedImageDataMapperTests.swift */; };
 		C6CAB61928A933C500D754D5 /* LoadResourcePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAB61828A933C500D754D5 /* LoadResourcePresenter.swift */; };
 		C6CAB61C28A9343200D754D5 /* LoadResourcePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAB61B28A9343200D754D5 /* LoadResourcePresenterTests.swift */; };
+		C6CAB61F28A9479700D754D5 /* Shared.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6CAB62128A9479700D754D5 /* Shared.strings */; };
+		C6CAB62528A949E500D754D5 /* SharedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAB62428A949E500D754D5 /* SharedLocalizationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +227,10 @@
 		C6CAB61528A84E4000D754D5 /* FeedImageDataMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataMapperTests.swift; sourceTree = "<group>"; };
 		C6CAB61828A933C500D754D5 /* LoadResourcePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenter.swift; sourceTree = "<group>"; };
 		C6CAB61B28A9343200D754D5 /* LoadResourcePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenterTests.swift; sourceTree = "<group>"; };
+		C6CAB62028A9479700D754D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Shared.strings; sourceTree = "<group>"; };
+		C6CAB62228A9479900D754D5 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Shared.strings; sourceTree = "<group>"; };
+		C6CAB62328A9479A00D754D5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Shared.strings"; sourceTree = "<group>"; };
+		C6CAB62428A949E500D754D5 /* SharedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -654,6 +660,7 @@
 			isa = PBXGroup;
 			children = (
 				C6CAB61828A933C500D754D5 /* LoadResourcePresenter.swift */,
+				C6CAB62128A9479700D754D5 /* Shared.strings */,
 			);
 			path = "Shared Presentation";
 			sourceTree = "<group>";
@@ -662,6 +669,7 @@
 			isa = PBXGroup;
 			children = (
 				C6CAB61B28A9343200D754D5 /* LoadResourcePresenterTests.swift */,
+				C6CAB62428A949E500D754D5 /* SharedLocalizationTests.swift */,
 			);
 			path = "Shared Presentation";
 			sourceTree = "<group>";
@@ -890,6 +898,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C65A0D152898301700C7D5EB /* Feed.strings in Resources */,
+				C6CAB61F28A9479700D754D5 /* Shared.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1012,6 +1021,7 @@
 				C6579E8D2850B84300B2B526 /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
 				C64C3AAF289A6ABB00AED69F /* URLProtocolStub.swift in Sources */,
 				C64F73FD285D2F8100EE430F /* FeedStoreSpecs.swift in Sources */,
+				C6CAB62528A949E500D754D5 /* SharedLocalizationTests.swift in Sources */,
 				C6CAB61028A837D600D754D5 /* FeedItemsMapperTests.swift in Sources */,
 				C6CAB61228A83E2200D754D5 /* ImageCommentsMapperTests.swift in Sources */,
 				C676362F2821639D0012D084 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
@@ -1059,6 +1069,16 @@
 				C65A0D192898301C00C7D5EB /* pt-BR */,
 			);
 			name = Feed.strings;
+			sourceTree = "<group>";
+		};
+		C6CAB62128A9479700D754D5 /* Shared.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6CAB62028A9479700D754D5 /* en */,
+				C6CAB62228A9479900D754D5 /* el */,
+				C6CAB62328A9479A00D754D5 /* pt-BR */,
+			);
+			name = Shared.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
