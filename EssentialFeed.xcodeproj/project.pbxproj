@@ -391,13 +391,6 @@
 			path = "Feed Cache";
 			sourceTree = "<group>";
 		};
-		C60A502D289A4EB600552AF3 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		C60A5032289A5E3B00552AF3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,7 +409,6 @@
 		C62324AB281DED9E0078F1DC /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
-				C60A502D289A4EB600552AF3 /* Helpers */,
 				C6CAB60F28A837D600D754D5 /* FeedItemsMapperTests.swift */,
 				C6CAB61528A84E4000D754D5 /* FeedImageDataMapperTests.swift */,
 				C64BBE5C28AE8099001997B8 /* FeedEndpointTests.swift */,
