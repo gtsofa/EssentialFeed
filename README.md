@@ -1,6 +1,6 @@
 # Building a Swift App with TDD and Modular Design
 
-[![CI](https://github.com/gtsofa/EssentialFeed/actions/workflows/CI.yml/badge.svg)](https://github.com/gtsofa/EssentialFeed/actions/workflows/CI.yml)
+[![CI-iOS](https://github.com/gtsofa/EssentialFeed/actions/workflows/CI-iOS.yml/badge.svg)](https://github.com/gtsofa/EssentialFeed/actions/workflows/CI-iOS.yml)
 
 1. System delivers error.
 
